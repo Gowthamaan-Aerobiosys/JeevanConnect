@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Mukta"
+      rel="stylesheet"
+    />
+    <style type="text/css" rel="stylesheet">
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-family: "Mukta";
+        text-align: justify;
+        -webkit-text-size-adjust: none;
+        background-color: #f2f4f6;
+        color: #51545e;
+      }
+
+      a {
+        color: #4336f8;
+      }
+
+      h1 {
+        margin-top: 0;
+        color: #333333;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      td {
+        word-break: break-word;
+      }
+
+      p {
+        color: #51545e;
+      }
+
+      .email-wrapper {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .button {
+        background-color: inherit;
+        color: inherit;
+        text-decoration: none !important;
+        outline: none !important;
+        border-top: 2px solid #688cfc;
+        border-right: 2px solid #688cfc;
+        border-bottom: 2px solid #688cfc;
+        border-left: 2px solid #688cfc;
+        padding: 8px;
+        display: inline-block;
+        color: #000000;
+        text-decoration: none;
+        border-radius: 3px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+        -webkit-text-size-adjust: none;
+        box-sizing: border-box;
+      }
+
+      .email-body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .email-body_inner {
+        width: 570px;
+        margin: 0 auto;
+        padding: 0;
+        background-color: #ffffff;
+      }
+
+      .email-footer {
+        width: 570px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+      }
+
+      .email-footer p {
+        color: #a8aaaf;
+      }
+
+      .body-action {
+        width: 100%;
+        margin: 0px auto;
+        padding: 0;
+        text-align: center;
+      }
+
+      .body-sub {
+        margin-top: 25px;
+        padding-top: 25px;
+        border-top: 1px solid #eaeaec;
+      }
+
+      .content-cell {
+        padding: 45px;
+      }
+
+      .footer-cell {
+        padding: 20px;
+      }
+
+      @media only screen and (max-width: 500px) {
+        .button {
+          width: 100% !important;
+          text-align: center !important;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        p,
+        h1,
+        .button {
+          color: #fff !important;
+        }
+        .email-body,
+        .email-body_inner,
+        .email-content,
+        .email-wrapper,
+        .email-footer {
+          background-color: #333333 !important;
+          color: #fff !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <table
+      class="email-wrapper"
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      role="presentation"
+    >
+      <tr>
+        <td text-align="center">
+          <table
+            class="email-content"
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            role="presentation"
+          >
+            <!-- Email Body -->
+            <tr>
+              <td
+                class="email-body"
+                width="570"
+                cellpadding="0"
+                cellspacing="0"
+              >
+                <table
+                  class="email-body_inner"
+                  align="center"
+                  width="570"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                >
+                  <!-- Body content -->
+                  <tr>
+                    <td class="content-cell">
+                      <div class="f-fallback">
+                        <h1>Hello {{ user.get_full_name }},</h1>
+                        <p>
+                          You are receiving this email because
+                          {{admin.get_full_name}} has invited you to join the
+                          {{workspace.name}} workspace on JeevanConnect.
+                          <br />
+                          <br />
+                          This invitation will expire in 7days.
+                        </p>
+                        <table
+                          class="body-action"
+                          align="center"
+                          width="100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                          role="presentation"
+                        >
+                          <tr>
+                            <td align="center">
+                              <table
+                                width="100%"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                                role="presentation"
+                              >
+                                <tr>
+                                  <td align="center">
+                                    <a
+                                      href="http://{{ domain }}{% url 'add-user' uuidb64=uuid wuidb64=wuid token=token %}"
+                                      target="_blank"
+                                      class="f-fallback button"
+                                      >Join @{{workspace.name}}</a
+                                    >
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <p>
+                          This invitation is intended for
+                          <a href="mailto:{{user.email}}"
+                            >{{user.get_full_name}}</a
+                          >. If you were not expecting this invitation, you can
+                          ignore this mail.
+                        </p>
+                        <p>
+                          <br />Thanks you for choosing Aerobiosys!<br />The
+                          Jeevan Connect team
+                        </p>
+                        <table class="body-sub" role="presentation">
+                          <tr>
+                            <td>
+                              <p class="f-fallback sub">
+                                If you’re having trouble with the button above,
+                                copy and paste the URL below into your web
+                                browser.
+                              </p>
+                              <p class="f-fallback sub">
+                                http://{{ domain }}{% url 'add-user'
+                                uuidb64=uuid wuidb64=wuid token=token %}
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table
+                  class="email-footer"
+                  text-align="center"
+                  width="570"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                >
+                  <tr>
+                    <td class="footer-cell" text-align="center">
+                      <p class="f-fallback sub align-center">
+                        [ Aerobiosys Innovations Private Limited, LLC ]
+                        <br />Room-607, Block C, IIT Hyderabad <br />Telanagana,
+                        India-502285
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+graph TD
+    A[JeevanConnect]-->|Existing User|B[Sign in]
+    A-->|New User|C[Sign up]
+    B-->|Authenticated|D[Homescreen]
+    C-->|3-Stage Form: Name and Contact, Professional Details and Password|F[Create Account]
+    F-->G[Email OTP Verification]-->D
+    B-->E[Forgot Password]-->|Email/UserID|H[Email OTP Verification]-->I[Reset Password]-->D

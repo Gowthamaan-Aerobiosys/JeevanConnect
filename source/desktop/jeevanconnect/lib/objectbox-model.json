@@ -1,0 +1,117 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:5035567386852497709",
+      "lastPropertyId": "18:5010352615001895560",
+      "name": "User",
+      "properties": [
+        {
+          "id": "1:2691367085505779055",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4423415689842578655",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "3:3259061823773728463",
+          "name": "isConfirmed",
+          "type": 1
+        },
+        {
+          "id": "4:4929293552003473779",
+          "name": "isActive",
+          "type": 1
+        },
+        {
+          "id": "5:6480968922763525114",
+          "name": "isAdmin",
+          "type": 1
+        },
+        {
+          "id": "6:1169599623427080146",
+          "name": "firstName",
+          "type": 9
+        },
+        {
+          "id": "7:4915407172278130659",
+          "name": "lastName",
+          "type": 9
+        },
+        {
+          "id": "8:4669600547995281886",
+          "name": "userId",
+          "type": 9
+        },
+        {
+          "id": "9:7060099801453523325",
+          "name": "registeredId",
+          "type": 9
+        },
+        {
+          "id": "10:5010862844834402001",
+          "name": "designation",
+          "type": 9
+        },
+        {
+          "id": "11:2558713404878746377",
+          "name": "sessionId",
+          "type": 9
+        },
+        {
+          "id": "12:378072991412596862",
+          "name": "csrfToken",
+          "type": 9
+        },
+        {
+          "id": "13:5945778551864986884",
+          "name": "emails",
+          "type": 30
+        },
+        {
+          "id": "14:4289515541948602565",
+          "name": "phoneNumbers",
+          "type": 30
+        },
+        {
+          "id": "15:7665686997835589673",
+          "name": "contact",
+          "type": 6
+        },
+        {
+          "id": "16:311886117506916123",
+          "name": "createdAt",
+          "type": 10
+        },
+        {
+          "id": "17:8498689914722561578",
+          "name": "lastModified",
+          "type": 10
+        },
+        {
+          "id": "18:5010352615001895560",
+          "name": "passwordChangedAt",
+          "type": 10
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "1:5035567386852497709",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

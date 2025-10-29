@@ -1,0 +1,50 @@
+2024-12-12 11:53:10    Monitoring started
+2024-12-12 11:53:26    PIP changed from 30.0 to 20.0
+2024-12-12 11:53:28    PEEP changed from 10.0 to 5.0
+2024-12-12 11:53:31    Ventilation started - PC-CMV
+2024-12-12 11:54:31    Auto scaling enabled
+2024-12-12 11:55:02    Auto scaling disabled
+2024-12-12 11:55:15    PIP alarm limits changed from 15.0-25.0 to 8.0-25.0
+2024-12-12 11:55:15    PIP alarm limits changed from 8.0-25.0 to 8.0-40.0
+2024-12-12 11:55:16    VTI alarm limits changed from 450.0-550.0 to 450.0-450.0
+2024-12-12 11:55:17    VTI alarm limits changed from 450.0-450.0 to 450.0-1150.0
+2024-12-12 11:55:17    VTI alarm limits changed from 450.0-1150.0 to 90.0-1150.0
+2024-12-12 11:55:18    RTotal alarm limits changed from 17.0-23.0 to 4.0-23.0
+2024-12-12 11:55:19    RTotal alarm limits changed from 4.0-23.0 to 4.0-36.0
+2024-12-12 11:55:21    minVolume alarm limits changed from 3.0-6.0 to 0.0-8.0
+2024-12-12 11:55:22    minVolume alarm limits changed from 0.0-8.0 to 0.0-20.0
+2024-12-12 11:55:23    Leak alarm limits changed from 100.0 to 340.0
+2024-12-12 12:02:02    Ventilation mode changed from PC-CMV to VC-CMV
+2024-12-12 12:02:04    VTI changed from 500.0 to 200.0
+2024-12-12 12:02:36    Flow rate changed from 50.0 to 35.0
+2024-12-12 12:03:05    Ventilation paused
+2024-12-12 12:03:09    Ventilation stopped
+2024-12-12 12:04:00    Monitoring started
+2024-12-12 12:04:18    Ventilation started - PC-CMV
+2024-12-12 12:06:15    Screen capture (_2024-12-12 12:06:15.jpg) saved at /captures
+2024-12-12 12:08:19    Ventilation mode changed from PC-CMV to VC-CMV
+2024-12-12 12:09:47    Ventilation mode changed from VC-CMV to PC-CMV
+2024-12-12 12:08:28    RR changed from 20.0 to 20.0
+2024-12-12 12:08:38    Ti changed from 1.0 to 1.2
+2024-12-12 12:09:57    PEEP changed from 10.0 to 5.0
+2024-12-12 12:14:38    Ventilation paused
+2024-12-12 12:17:10    Ventilation stopped
+2024-12-12 12:26:57    Monitoring started
+2024-12-12 12:27:18    Ventilation mode changed from PC-CMV to PC-CMV
+2024-12-12 12:27:46    Ventilation mode changed from PC-CMV to PC-A/SIMV
+2024-12-12 12:28:48    Ventilation mode changed from PC-A/SIMV to PSV
+2024-12-12 12:29:00    Ventilation mode changed from PSV to CPAP
+2024-12-12 12:29:17    Ventilation mode changed from CPAP to PC-CMV
+2024-12-12 12:29:19    Ventilation started - PC-CMV
+2024-12-12 12:29:32    Auto scaling enabled
+2024-12-12 12:29:54    Ventilation paused
+2024-12-12 12:30:09    Ventilation stopped
+2024-12-12 12:30:13    Monitoring started
+2024-12-12 12:30:17    Ventilation stopped
+2024-12-12 13:12:31    Monitoring started
+2024-12-12 13:12:42    Ventilation mode changed from PC-CMV to VC-CMV
+2024-12-12 13:12:51    Ventilation started - VC-CMV
+2024-12-12 13:13:38    Ventilation paused
+2024-12-12 13:13:38    Ventilation stopped
+2024-12-12 13:13:50    Ventilation started - PC-CMV
+2024-12-12 13:13:51    Monitoring started
